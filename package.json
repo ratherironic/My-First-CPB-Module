@@ -5,14 +5,11 @@
 
   "cpb-module": [
     {
-      "module": "/www/my-first-module.html",
-      "cpb": "/destination/path" 
+      "module": "/source/my-first-module.html",
+      "cpb": "/source/my-first-module.html" 
     }, {
-      "module": "/some/path",
-      "cpb": "/destination/path" 
-    }, {
-      "module": "/some/path",
-      "cpb": "/destination/path" 
+      "module": "/source/02.widgets.myFirstModule.scss",
+      "cpb": "/source/02.widgets.myFirstModule.scss" 
     }
   ]
 }
