@@ -8,8 +8,8 @@
       "module": "source/my-first-module.html",
       "cpb": "source/my-first-module.html" 
     }, {
-      "module": "source/02.widgets.myFirstModule.scss",
-      "cpb": "source/02.widgets.myFirstModule.scss" 
+      "module": "source/css/app/02.widgets.myFirstModule.scss",
+      "cpb": "source/css/app/02.widgets.myFirstModule.scss" 
     }
   ]
 }
