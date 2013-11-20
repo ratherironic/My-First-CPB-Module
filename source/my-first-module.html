@@ -42,17 +42,118 @@
         <p>Javascript is currently disabled. Please <a href="http://www.google.com/support/bin/answer.py?answer=23852" target="_blank">enable javascript</a> for the optimal experience!</p>
       </noscript>
 
-      <header></header>
+      <header>
+        <h1>CP+B Front-End Developer Guide : Module</h1>
+      </header>
 
-      <div id="content">
-        <h1>Header 1</h1>
-        <h2>Header 2</h2>
-        <h3>Header 3</h3>
-        <h4>Header 4</h4>
-        <h5>Header 5</h5>
-        <h6>Header 6</h6>
-      </div>
+      <main>
+        <section class="build">
+          <div>
+            <h2>So you want to build a module?</h2>
+            <p>Awesome! The module process helps you not only with creating a utility that the team will thank you endlessly for in future projects but also with building your own personal brand. It's your opportunity to biuld something cool and show it off/use it on future projects.</p>
+            
+            <p>But it's more than that! This is also your own personal step into the open source world! Your opportunity to show the world what you're made of code wise.</p>
+          </div>
+        </section>
 
+        <section class="rules">
+          <div>
+            <h2>What are the rules?</h2>
+            <p>The only rules are that you follow the CP+B coding standards in order to contribute the module back to the CP+B Boilerplate. Other than that, no major 3rd party libs, work with that you have (don't make us use CoffeeScript, we don't wanna). </p>
+          </div>
+        </section>
+
+        <section class="steps">
+          <div>
+            <h2>Where do I start?</h2>
+            <p>Building a module is fairly easy. Just simple these simple steps:</p>
+            <ol>
+              <li>
+                <h3><span class="num">1.</span> Determine your Module's Purpose</h3>
+                <p>There a a plethora of modules which could be built. Think about what have you built several times and don't want to build again. Or, what has been built but you think you can build better. OR What has already been built well by someone else and you want to showcase and display the capabilities.</p>
+                <p class="list-label">Some possible suggestions to think about are:</p>
+                <ul>
+                  <li><p>Carousel</p></li>
+                  <li><p>Form Validation</p></li>
+                  <li><p>Form Styles</p></li>
+                  <li><p>Or whatever else you'd like!</p></li>
+                </ul>
+
+                <p>To see if what you are building has been implemented, simply install the Yeoman CP+B Boilerplate Generator and run it to see if your module exists aready. Or ask a tech lead.</p>
+              </li>
+              <li>
+                <h3><span class="num">2.</span> Install the Yeoman CP+B Module Generator</h3>
+                <p>Simply npm install the generator with this code in terminal</p>
+                <code>npm install -g generator-cpb-module</code>
+              </li>
+              <li>
+                <h3><span class="num">3.</span> Install the Yeoman CP+B Module Generator</h3>
+                <p>Simply npm install the generator with this code in terminal</p>
+                <code>npm install -g generator-cpb-module</code>
+              </li>
+              <li>
+                <h3><span class="num">4.</span> Create a new Module Folder</h3>
+                <p>In Terminal</p>
+                <code>mkdir module-{{name of your module}} &amp;&amp; cd module-{{name of your module}}</code>
+              </li>
+              <li>
+                <h3><span class="num">5.</span> Let Yeoman Generate the Module-Boilerplate</h3>
+                <p>In Terminal</p>
+                <code>yo cpb-module</code>
+                <p>When prompted give the {{name of your module}}</p>
+              </li>
+              <li>
+                <h3><span class="num">6.</span> Create/Update README</h3>
+                <p>Optimally we would like the direction of development to be based on the README. We would like to see a plan for a minimum viable product and what the next steps are in order to make this product better. This is a skill that some of you might already do but in case you don't it's useful to know. Please try to do this.</p>
+              </li>
+              <li>
+                <h3><span class="num">7.</span> Phew! Finally you can start builing your module!</h3>
+                <p>Time to open the editor and dive into some code!</p>
+              </li>
+              <li>
+                <h3><span class="num">8.</span> Done?! Already?!</h3>
+                <p>Congrats! Push that baby to github!</p>
+              </li>
+              <li>
+                <h3><span class="num">9.</span> Time to add your module to the CP+B Boilerplate module options!</h3>
+                <p>To get started with that, clone the CP+B Yeoman Generator Repo and CD to the cloned repo, found here:</p>
+                <code>https://github.com/cpbtechnology/US-Int-YO-CP-B</code>
+              </li>
+              <li>
+                <h3><span class="num">10.</span> Now here's the tedious part:</h3>
+                <p>The CP+B Boilerplate is smart but not Omnipotant. We need to know how to use your module. We need to know what you added/changed to make your module work.</p>
+                <p>To start out find the file within the CP+B Boilerplate Repo:</p>
+                <code>app/templates/modules.json</code>
+                <p>Open that file!</p>
+              </li>
+              <li>
+                <h3><span class="num">11.</span> Okay that wasn't tedious but this is:</h3>
+                <p>Within the 'modules' array add a new Object. The object should look like this:</p>
+                <code class="lots-o-code">
+                  {<br/>
+                    <span class="space-one"></span>"name": "{{ name of your module }}",<br/>
+                    <span class="space-one"></span>"value": "{{ name of user who owns the repo of the module }}@{{ name of the module repo }}",<br/>
+                    <span class="space-one"></span>"cpb-module": [<br/>
+                      <span class="space-two"></span>{<br/>
+                        <span class="space-three"></span>"module": "{{ source of a file you want to move in your repo }}",<br/>
+                        <span class="space-three"></span>"cpb": "{{ location/name of where we want the file you have selected above to live in the CP+B Repo }}"<br/>
+                      <span class="space-two"></span>}, {<br/>
+                        <span class="space-three"></span>"module": "{{ ANOTHER source of a file you want to move in your repo }}",<br/>
+                        <span class="space-three"></span>"cpb": "{{ ANOTHER location/name of where we want the file you have selected above to live in the CP+B Repo }}"<br/>
+                      <span class="space-two"></span>}<br/>
+                    <span class="space-one"></span>]<br/>
+                  }
+                </code>
+                <p>Now as you can see there is a lot of data to fill out, but the basic pieces of it is a name of the project, name of user that controls the module repo, the name of the repo the module exists and all of the files needed and paths to their destination. It's tedious but so friggin worth it!</p>
+              </li>
+              <li>
+                <h3><span class="num">12.</span> Bask in the awesomeness that is, you.</h3>
+                <p>We owe you a beer. Or like several.</p>
+              </li>
+            </ol>
+          </div>
+        </section>
+      </main>
       <footer></footer>
     </div>
     <!-- END: section-main -->

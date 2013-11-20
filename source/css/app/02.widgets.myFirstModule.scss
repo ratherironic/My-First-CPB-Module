@@ -3,30 +3,149 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-	font-family: 'Rokkitt', serif;
+h6,
+p {
+  font-family: 'Rokkitt', serif;
 }
 
 h1 {
-	color: #CC9314;
+  color: #fbfaf5;
 }
 
-h2 {
-	color: #997C3D;
+html,
+body {
+  background-color: #F2EBBF;
 }
 
-h3 {
-	color: #FF7100;
+footer,
+header,
+main {
+
 }
 
-h4 {
-	color: #A8FFF3;
+header {
+  padding: 1em 0;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+
+  h1 {
+    position: relative;
+    z-index: 3;
+  }
+}
+header:after {
+  background-color: #F3B562;
+  content: "";
+  display: block;
+  height: 100%;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
 }
 
-h5 {
-	color: #4BCC95;
+main {
+  section {
+    padding: 5em 0;
+    
+    > div {
+      margin: 0 auto;
+      width: 70%;
+    }
+    
+    h2,
+    h3,
+    p {
+      color: #fbfaf5;
+    }
+
+    code {
+      color: #F2EBBF;
+      display: block;
+      padding-bottom: 1.5em;
+    }
+
+    h2 {
+      font-size: 6em;
+    }
+
+    h3 {
+      font-size: 2.4em;
+      left: -0.75em;
+      position: relative;
+    }
+
+    code,
+    p {
+      font-size: 1.5em;
+    }
+
+    .list-label {
+      padding-bottom: 0em;
+    }
+
+    .num {
+      font-size: 1.6em;
+    }
+
+    .lots-o-code {
+      font-size: 0.9em;
+    }
+
+    ol {
+      ul {
+        padding-bottom: 1em;
+        p {
+          padding-bottom: 0em;
+        }
+      }
+    }
+  }
+
+  .build {
+    background-color: #F06060;
+    padding-top: 7em;
+    /*h2 {
+      color: #C75050;
+      opacity: 0.5;
+      position: relative;
+      text-shadow: 0px 1px #FF9689, 0px -2px 1px #444;
+    }*/
+  }
+
+  .rules {
+    background-color: #8CBEB2;
+     /*h2 {
+      color: #8BBDB1;
+      opacity: 0.5;
+      position: relative;
+      text-shadow: 0px 1px #BAFCED, 0px -2px 1px #444;
+    }*/
+  }
+
+  .steps {
+    background-color: #5C102B;
+  }
 }
 
-h6 {
-	color: #A0CCAC;
+
+
+
+
+.space-one {
+  display: inline-block;
+  width: 1em;
+}
+
+.space-two {
+  display: inline-block;
+  width: 2em;
+}
+
+.space-three {
+  display: inline-block;
+  width: 3em;
 }
